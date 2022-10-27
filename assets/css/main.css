@@ -2,17 +2,20 @@
 
 /* Color Palette */
 :root {
-    --color-primary: #246bfd;
-    --color-secondary: #fff;
-    --color-border: #1890ff;
-    --logo-fontsize: 2rem;
+  --body-bgcolor: F5F8FF;
+  --color-primary: #246bfd;
+  --color-secondary: #fff;
+  --color-border: #1890ff;
+  --logo-fontsize: 2rem;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 /* Typography */
-body {
-    font-family: 'Lato' sans-serif;
+* {
+  font-family: "Lato" sans-serif;
+  margin: 0;
+  padding: 0;
 }
