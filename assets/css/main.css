@@ -1,18 +1,156 @@
-@import-normalize;
+/* @import-normalize; */
 
 /* Color Palette */
 :root {
     --color-primary: #246bfd;
     --color-secondary: #fff;
     --color-border: #1890ff;
+    --color-input: #d9d9d9;
+    --color-placeholder: #bfbfbf;
+    --color-background: #d7e4f3;
     --logo-fontsize: 2rem;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+} 
 
 html {
     font-size: 62.5%;
 }
 
+h1 {
+    /* font-size: var(--logo-fontsize); */
+    /* margin-bottom: 1rem; */
+}
+
+/* h2 {
+    font-size: ;
+    margin-bottom: 1rem;
+} */
+
 /* Typography */
 body {
-    font-family: 'Lato' sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-background);
+    /* height: 100vh; */
+}
+
+/* Header */
+.logo-text {
+    color: var(--color-primary);
+    font-size: var(--logo-fontsize);
+    font-weight: 700;
+    margin: 4.6rem auto 0;
+}
+
+.container {
+    height: 672px;
+    width: 312px;
+    left: 24px;
+    top: 100px;
+    border-radius: 1rem;
+    background: var(--color-secondary);
+    margin: 30px 0 28px;
+}
+
+
+.form-description  {
+    text-align: center;
+    width: 100%;
+}
+
+.form-heading {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    padding-top: 35px;
+    margin: 0;
+}
+
+.form-description p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 8px 0 32px;
+}
+
+/* .form-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    isolation: isolate;
+    width: 264px;
+    height: 196px;
+} */
+
+.form-label, .label-inline {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.label-inline {
+}
+
+.form-label {
+    display: block;
+}
+
+.form-group {
+    margin: 0 2.4rem;
+}
+
+.form-control {
+    border: 1px solid var(--color-input);
+    outline: 0;
+    margin: 8px 0 24px;
+    padding: 12px;
+}
+
+.form-control, .form-submit {
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 44px;
+    width: 100%;
+}
+
+/* ::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--color-placeholder);
+    padding-left: 12px;
+} */
+
+.remember-check {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+}
+
+.form-group.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 12px;
+}
+
+.form-submit {
+    background: var(--color-primary);
+    border: 0;
+    color: var(--color-secondary);
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
 }

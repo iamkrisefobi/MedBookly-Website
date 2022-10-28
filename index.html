@@ -5,15 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
-    <!-- <link rel="stylesheet" href=""> -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,42 +15,46 @@
 
 </head>
 <body>
-    <div><h1>MedBookly</h1></div>
-    <div>
-        <form action="">
-            <h2>Hello there</h2>
+    <header><h1 class="logo-text">MedBookly</h1></header>
+    <div class="container">
+        <div class="form-description">
+            <h2 class="form-heading">Hello there</h2>
             <p>Sign in to your account</p>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Email" required>
+        </div>
+        
+        <form class="form-signin" action="">
+            <div class="form-input-container">
+                <div class="form-group">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="password">Password</label>
+                    <input class="form-control" type="password" id="password" placeholder="Password" required>
+                </div>
             </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Password" required>
-                <i class="fas-light fa-home"></i>
-                <i class="fa-light fa-eye-slash"></i>
-                <!-- <img src="./assets/icons/icon_eyeclose.svg" alt=""> -->
-                <!-- Download eyeopen -->
+
+            <div class="form-group flex-center" >
+                <label class="label-inline" for="remember-me">Remember me?</label>
+                <input class="remember-check" type="checkbox" id="remember-me">
             </div>
-            <div>
-                <label for="">Remember me?</label>
-                <input type="checkbox">
-            </div>
-            <div>
-                <input type="submit" value="Sign In">
-            </div>
-            <div><a href="#">Forgot Password?</a></div>
-            <div>
-                <div class="line"></div>
-                <span>or sign in with</span>
-                <div class="line"></div>
-            </div>  
-            <div class="option-signin">
-                <a href="#"><img src="./assets/icons/icon_google.svg" alt=""></a>
-                <a href="#"><img src="./assets/icons/icon_facebook.svg" alt=""></a>
-            </div>
-            <div>Don't have an account? <a href="#">Sign Up</a></div>
-        </form>
+            
+                <div class="form-group">
+                    <input class="form-submit" type="submit" value="Sign In">
+                </div>
+                <div class="forgot-password"><a href="#">Forgot Password?</a></div>
+        </form>    
+        <div>
+            <div class="line"></div>
+            <span>or sign in with</span>
+            <div class="line"></div>
+        </div>  
+        <div class="option-signin">
+            <a href="#"><img src="./assets/icons/icon_google.svg" alt=""></a>
+            <a href="#"><img src="./assets/icons/icon_facebook.svg" alt=""></a>
+        </div>
+        <div>Don't have an account? <a href="#">Sign Up</a></div>
+        
     </div>
 </body>
 </html>
