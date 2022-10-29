@@ -8,6 +8,8 @@
     --color-input: #d9d9d9;
     --color-placeholder: #bfbfbf;
     --color-background: #d7e4f3;
+    --color-button-hover:  #1F5BD7;
+    --color-button-active: #4B86FD;
     --logo-fontsize: 2rem;
 }
 
@@ -22,19 +24,14 @@ html {
     font-size: 62.5%;
 }
 
-
-
-
 /* Typography */
 body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     background: var(--color-background);
-
     height: 100vh;
 }
 
@@ -43,12 +40,9 @@ body {
     color: var(--color-primary);
     font-size: var(--logo-fontsize);
     font-weight: 700;
-    /* margin: 4.6rem auto 0; */
 }
 
 .container {
-    /* height: 672px;
-    width: 312px; */
     border-radius: 1rem;
     background: var(--color-secondary);
     margin: 30px 0 28px;
@@ -76,15 +70,6 @@ body {
     margin: 8px 0 32px;
 }
 
-/* .form-input-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    isolation: isolate;
-    width: 264px;
-    height: 196px;
-} */
 
 .form-label, .label-inline, .forgot-password {
     font-size: 14px;
@@ -119,12 +104,6 @@ body {
     width: 100%;
 }
 
-::placeholder {
-    /* letter-spacing: 0em; */
-    /* text-align: left; */
-    /* padding-left: 12px; */
-}
-
 .remember-check {
     width: 16px;
     height: 16px;
@@ -146,14 +125,25 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    cursor: pointer;
 }
 
-.forgot-password a {
 
-    /* width: 420px; */
-    /* height: 22px; */
+.form-submit:hover {
+    background: var(--color-button-hover);
+    border: 1px solid var(--color-button-hover);
+}
+
+.form-submit:active {
+    background: var(--color-button-active);
+    border: 1px solid var(--color-button-active);
+    box-shadow: 0px 0px 0px 5px #4B86FD1A; 
+}
+
+
+.forgot-password a {
     display: flex;
-    /* align-items: center; */
     justify-content: flex-end;
     text-decoration: none;
     font-style: normal;
@@ -162,25 +152,57 @@ body {
     margin-top: 12px;
 }
 
-.signin-footer {
-    margin-top: 38px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0px 0px;
-    gap: 28px;
-    width: 264px;
-    height: 142px;
+.signin-with {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+    margin-top: 38px ;
 }
 
-/* .line {
-    width: 159.5px;
-    background: #141414;
-    /* height: 1px; */
-    border: 1px solid #454545;
-    /* content: " ddfdsd"; */
-    color: #fff;
+.signin-with::before, .signin-with::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 0.9px;
+    width: 80.5px;
+    background-color: black;
+    top: 50%;
+}
 
-    
-} */
+.signin-with::after {
+    right: 0;
+}
+
+.password {
+    position: relative;
+}
+
+.option-signin {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    height: 32px;
+    margin: 28px 0 28px;
+}
+
+.option-signin img {
+    width: 32px;
+}
+
+.footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #1F1F1F;
+    margin-bottom: 48px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
