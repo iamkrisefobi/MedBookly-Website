@@ -1,21 +1,25 @@
-@import-normalize;
+/* @import "/normalize.css"; */
 
 /* Color Palette */
 :root {
-  --body-bgcolor: F5F8FF;
   --color-primary: #246bfd;
+  --body-bgcolor: #f5f8ff;
   --color-secondary: #fff;
   --color-border: #1890ff;
+  --color-input: #d9d9d9;
+  --color-placeholder: #bfbfbf;
+  --color-background: #d7e4f3;
   --logo-fontsize: 2rem;
-}
-
-html {
-  font-size: 62.5%;
 }
 
 /* Typography */
 * {
-  font-family: "Lato" sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
 }

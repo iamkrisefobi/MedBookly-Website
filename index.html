@@ -31,47 +31,67 @@
     />
   </head>
   <body>
-    <header><h1>MedBookly</h1></header>
-    <div class="container">
-      <form action="">
+    <div class="content-image"></div>
+    <div class="section">
+      <header>
+        <h1>MedBookly</h1>
+      </header>
+
+      <div class="container">
         <h2>Hello there</h2>
         <p>Sign in to your accunt</p>
-        <div>
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Email" required />
-          <!-- </div>
-        <div>
-          <label for="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="Password"
-            required
-          />
-          <i class="fas-light fa-home"></i>
-          <i class="fa-light fa-eye-slash"></i> -->
-          <!-- <img src="./assets/icons/icon_eyeclose.svg" alt=""> -->
-          <!-- Download eyeopen -->
+
+        <form class="form-signin" action="">
+          <div class="form-input-container">
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input
+                class="form-control"
+                type="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="password">Password</label>
+              <input
+                class="form-control"
+                type="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
+              <!-- <div class="icon-show">
+                <i class="fa-light fa-eye-slash"></i>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="form-group flex-center">
+            <label class="label-inline" for="remember-me">Remember me?</label>
+            <input class="remember-check" type="checkbox" id="remember-me" />
+          </div>
+
+          <input class="form-submit" type="submit" value="Sign In" />
+
+          <div class="forgot-password"><a href="#">Forgot Password?</a></div>
+        </form>
+        <div class="signin-footer">
+          <div>
+            <span class="line"></span>
+            <p>or sign in with</p>
+            <span class="line"></span>
+          </div>
+          <div class="option-signin">
+            <a href="#"><img src="./assets/icons/icon_google.svg" alt="" /></a>
+            <a href="#"
+              ><img src="./assets/icons/icon_facebook.svg" alt=""
+            /></a>
+          </div>
+          <div>Don't have an account? <a href="#">Sign Up</a></div>
         </div>
-        <div>
-          <label for="">Remember me?</label>
-          <input type="checkbox" />
-        </div>
-        <div>
-          <input type="submit" value="Sign In" />
-        </div>
-        <div><a href="#">Forgot Password?</a></div>
-        <div>
-          <div class="line"></div>
-          <span>or sign in with</span>
-          <div class="line"></div>
-        </div>
-        <div class="option-signin">
-          <a href="#"><img src="./assets/icons/icon_google.svg" alt="" /></a>
-          <a href="#"><img src="./assets/icons/icon_facebook.svg" alt="" /></a>
-        </div>
-        <div>Don't have an account? <a href="#">Sign Up</a></div>
-      </form>
+      </div>
     </div>
   </body>
 </html>
