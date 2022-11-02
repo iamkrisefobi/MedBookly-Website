@@ -1,0 +1,73 @@
+@import url(../../main.css);
+
+
+/* Form Inputs and labels */
+.form-group { /*This is a container for a single block label and its input*/
+    width: 100%;
+}
+
+.form-label, .form-label-inline { /*Label properties (block and inline)*/
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.form-label {
+    display: block;
+}
+
+.form-input { /*input properties*/
+    border-radius: 3px;
+    border: 1px solid var(--color-black);
+    box-sizing: border-box;
+    color: var(--color-black);
+    font-size: 12px;
+    font-weight: 400;
+    height: 40px;
+    line-height: 16px;
+    margin: 8px 0 12px;
+    outline: 0;
+    padding: 12px;
+    width: 100%;
+}
+
+.form-input-checkbox { /*input properties for type="checkbox"*/
+    height: 16px;
+    margin-left: 8px;
+    width: 16px;
+}
+
+.form-group-inline { /*This is a container for an inline label and its input*/
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* For Desktop */
+@media screen and (min-width: 1280px) {
+    .form-label, .form-label-inline {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+    
+    .form-input {
+        font-size: 14px;
+        height: 44px;
+        line-height: 20px;
+        margin: 8px 0 36px;
+    }
+    
+    .form-input-check {
+        height: 16px;
+        margin-left: 8px;
+        width: 16px;
+    }
+    
+    .form-group-inline {
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+    }
+}

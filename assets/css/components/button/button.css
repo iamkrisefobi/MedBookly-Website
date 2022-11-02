@@ -1,0 +1,42 @@
+@import url(../../main.css);
+
+/* Buttons */
+.btn { /*This is the generic button structure*/
+    border-radius: 3px;
+    border: 0;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 10px;
+    height: 40px;
+    padding: 6.4px 15px;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.btn-primary { /*This is button with primary color as background*/
+    border: 1px solid var(--color-primary);
+    background: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.btn-primary:hover { /*This is hover style for primary button*/
+    background: var(--color-button-hover);
+    border: 1px solid var(--color-button-hover);
+}
+
+.btn-primary:active { /*This is active style for primary button*/
+    background: var(--color-button-active);
+    border: 1px solid var(--color-button-active);
+    box-shadow: 0px 0px 0px 5px #4B86FD1A; 
+}
+
+.btn-secondary { /*This is button with secondary color as background*/
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    background: var(--color-secondary);
+}
+
+
