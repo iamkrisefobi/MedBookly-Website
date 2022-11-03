@@ -1,9 +1,10 @@
-/* @import-normalize; */
 
 /* Color Palette */
 :root {
     --color-primary: #246bfd;
     --color-secondary: #fff;
+    --color-black: #000;
+    --color-danger: red;
     --color-border: #1890ff;
     --color-input: #d9d9d9;
     --color-placeholder: #bfbfbf;
