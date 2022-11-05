@@ -40,6 +40,7 @@ color: #1F1F1F;
     line-height: 16px;
     margin: 8px 0 12px;
     outline: 0;
+    overflow-y: hidden;
     padding: 12px;
     width: 467px;
     height: 70px;
