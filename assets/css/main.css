@@ -6,6 +6,7 @@
     --color-secondary: #fff;
     --color-black: #000;
     --color-danger:  #E32F2F;
+    --color-nav-item: #262626;
     --color-border: #1890ff;
     --color-input: #d9d9d9;
     --color-placeholder: #bfbfbf;
@@ -15,9 +16,20 @@
     --logo-fontsize: 2rem;
 }
 
+/* Margin and Padding Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
 } 
+
+/* Typography */
+body {
+    font-family: 'Lato', sans-serif;
+    color: #1f1f1f;
+}
+
+/* html {
+    font-size: 62.5%;
+} */
+
