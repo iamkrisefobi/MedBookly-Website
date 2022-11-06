@@ -4,6 +4,7 @@
 :root {
     --color-primary: #246bfd;
     --color-secondary: #fff;
+    --color-body: #1f1f1f;
     --color-black: #000;
     --color-danger:  #E32F2F;
     --color-nav-item: #262626;
@@ -26,7 +27,7 @@
 /* Typography */
 body {
     font-family: 'Lato', sans-serif;
-    color: #1f1f1f;
+    color: var(--color-body);
 }
 
 /* html {

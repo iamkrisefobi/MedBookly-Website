@@ -1,7 +1,7 @@
 @import url(../../main.css);
 
 body {
-    width: 1280px;
+    /* width: 1280px; */
 }
 
 .nav-bar {
@@ -12,6 +12,8 @@ body {
     height: 80px;
     padding: 16px 64px;
     box-shadow: 0px 4px 20px rgba(186, 197, 255, 0.25);
+    background: var(--color-secondary);
+    /* flex-wrap: wrap; */
 }
 
 .logo-text {
@@ -23,22 +25,20 @@ body {
 
 .nav-bar a {
     text-decoration: none; 
+    transition: color 0.5s;
 }
 
 .nav-list {
     list-style: none;
-    width: 450px;
-    height: 39px;
-    margin: 20.5px 217.5px;
-    /* border: 1px solid yellow; */
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;    
 }
 
-/* .nav-item {
-    display: inline-block;
-} */
+.nav-item:hover a{
+    color: var(--color-primary);
+}
 
 .nav-item a {
     color: var(--color-nav-item);
@@ -46,13 +46,90 @@ body {
 
 .profile-end {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 163px;
-    height: 40px;
+    gap: 10px;
 }
 
 .profile-name {
     font-size: 16px;
     color: var(--color-nav-item);
 }
+
+
+/* collapse version */
+.search-icon {
+}
+
+.nav-input {
+    border-radius: 10px;
+    padding-right: 12px;
+    color: var(--color-nav-item);
+    /* font-size: 14px; */
+}
+
+.search-input { 
+    display: flex;
+    border: 1px solid var(--color-placeholder);
+    border-radius: 10px;
+    color: var(--color-placeholder);
+    /* background-color: yellow; */
+    /* font-weight: 400; */
+    outline: 0;
+    /* height: 44px; */
+    /* width: 202px; */
+}
+
+.search-input .nav-input {
+    border: 0;
+    flex-grow: 1;
+    outline: 0;
+
+}
+
+.search-input img {
+    margin: 11.29px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.profile-drop {
+    background: var(--color-primary);
+    display: flex;
+    text-align: center;
+    border: 1px solid var(--color-placeholder);
+    width: 197px;
+    height: 104px;
+    padding: 21px 30px;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.profile-drop p {
+    padding-bottom: 21px;
+}
+
+.collapse-arrow {
+    transform: rotate(-90deg);
+}
+
+.collapsible-content {
+    display: none;
+}
+
+.collapsible-true .collapse-arrow {
+    transform: rotate(0);
+}
+
+.collapsible-true .collapsible-content {
+    display: block;
+}
+
+/* End of collapse */
