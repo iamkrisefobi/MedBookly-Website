@@ -96,7 +96,7 @@ button.save-changes {
   line-height: 19px;
 }
 /* For Tablet */
-@media (max-width: 900px) and (min-width: 521px) {
+@media (max-width: 799px) and (min-width: 521px) {
   .nav-small {
     display: none;
   }
@@ -148,7 +148,7 @@ button.save-changes {
 }
 
 /* For Desktop */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 800px) {
   .nav-small {
     display: none;
   }
