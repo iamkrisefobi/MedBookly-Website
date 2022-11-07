@@ -73,17 +73,11 @@
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="country">Country <span>*</span></label>
-                        <select name="country" id="country" class="form-input">
-                            <option value="nigeria">Nigeria</option>
-                            <option value="nigeria">Kenya</option>
-                        </select>
+                        <select name="country" onchange="printState('state',this.selectedIndex);" id="country"></select> 
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="location">location <span>*</span></label>
-                        <select name="location" id="location" class="form-input">
-                            <option value="lagos">Lagos</option>
-                            <option value="abuja">Abuja</option>
-                        </select>
+                        <select name="state" id ="state"></select>
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="phoneNumber">Phone Number <span>*</span></label>
@@ -97,5 +91,6 @@
         
     </main>
     
+    <script src="app.js"></script>
 </body>
 </html>
