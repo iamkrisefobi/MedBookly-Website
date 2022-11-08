@@ -1,9 +1,5 @@
 @import url(../../main.css);
 
-/* body {
-  width: 1280px;
-} */
-
 .nav-bar {
   width: 100%;
   display: flex;
@@ -13,7 +9,6 @@
   padding: 16px 5%;
   box-shadow: 0px 4px 20px rgba(186, 197, 255, 0.25);
   background: var(--color-secondary);
-  /* flex-wrap: wrap; */
 }
 
 .logo-text {
@@ -63,7 +58,6 @@
   border-radius: 10px;
   padding-right: 12px;
   color: var(--color-nav-item);
-  /* font-size: 14px; */
   width: 170px;
   max-width: 170px;
 }
@@ -73,11 +67,7 @@
   border: 1px solid var(--color-placeholder);
   border-radius: 10px;
   color: var(--color-placeholder);
-  /* background-color: yellow; */
-  /* font-weight: 400; */
   outline: 0;
-  /* height: 44px; */
-  /* width: 202px; */
 }
 
 .search-input .nav-input {
@@ -102,7 +92,6 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* border: 1px solid var(--color-placeholder); */
   width: 197px;
   height: 104px;
   padding: 21px 30px;
