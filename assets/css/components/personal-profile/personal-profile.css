@@ -96,6 +96,7 @@ button.save-changes {
   line-height: 19px;
 }
 /* For Tablet */
+
 @media (max-width: 799px) and (min-width: 521px) {
   .nav-small {
     display: none;
@@ -145,47 +146,50 @@ button.save-changes {
   .form-input {
     margin-bottom: 24px;
   }
+
 }
 
 /* For Desktop */
 @media screen and (min-width: 800px) {
-  .nav-small {
-    display: none;
-  }
-  .nav-bar {
-    display: flex;
-  }
-  .main-wrapper {
-    flex-direction: column;
-    width: 80%;
-  }
-  .main-wrapper .title {
-    display: block;
-    align-self: flex-start;
-    padding: 25px 0 0 47px;
-    margin: 0 0 30px;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 38px;
-  }
-  .flex-direction-column {
-    flex-direction: row;
-    width: 100%;
-  }
-  .image-container {
-    align-self: flex-start;
-    width: 30%;
-  }
-  .form-container {
-    border-left: 2px solid #d9d9d9;
-    padding: 0 25% 0 5%;
-  }
-  .flex-container-desktop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .form-input {
-    margin-bottom: 24px;
-  }
+
+    .nav-small {
+        display: none;
+    }
+    .nav-bar {
+        display: flex;
+    }
+    .main-wrapper {
+        flex-direction: column;
+        width: 80%;
+    }
+    .main-wrapper .title {
+        display: block;
+        align-self: flex-start;
+        padding: 25px 0 0 47px;
+        margin: 0 0 30px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .flex-direction-column {
+        flex-direction: row;
+        width: 100%;
+    }
+    .image-container {
+        align-self: flex-start;
+        width: 30%;
+    }
+    .form-container {
+        border-left: 2px solid #d9d9d9;
+        padding: 0 25% 0 5%;
+    }
+    .flex-container-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-input {
+        margin-bottom: 24px;
+    }
+
 }
