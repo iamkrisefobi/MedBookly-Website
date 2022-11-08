@@ -80,11 +80,11 @@
                   </div>
                   <div class="form-group">
                       <label class="form-label" for="country">Country <span>*</span></label>
-                      <select name="country" onchange="printState('state',this.selectedIndex);" id="country"></select> 
+                      <select class="form-input" name="country" onchange="printState('state',this.selectedIndex);" id="country"></select> 
                   </div>
                   <div class="form-group">
-                      <label class="form-label" for="location">location <span>*</span></label>
-                      <select name="state" id ="state"></select>
+                      <label class="form-label" for="location">State <span>*</span></label>
+                      <select class="form-input" name="state" id="state"></select>
                   </div>
                   <div class="form-group">
                       <label class="form-label" for="phoneNumber">Phone Number <span>*</span></label>
@@ -98,7 +98,7 @@
   </main>
 
     <!-- Link to js country file -->
-  <script src="app.js">
+  <script src="../app.js">
   </script>
   </body>
 </html>
