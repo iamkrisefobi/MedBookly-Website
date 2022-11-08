@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+@import url(../button/button.css);
+
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+.roundbg{
+    border-radius: 50%;
+    width: 118px;
+    height: 118px;
+    background-color: #D9D9D9;
+    margin: 20px;
+}
+
+.plus{
+    margin-left: 34px;
+    margin-top: 34px; 
+}
+
+.text{
+    font-size: 16px;
+    color: #153D90;
+    margin-left: 16px;
+    margin-bottom: 17px;
+}
+button{
+    margin-left: 10px;
+}
