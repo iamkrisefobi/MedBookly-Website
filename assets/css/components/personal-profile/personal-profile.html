@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./personal-profile.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav-small">
+        <a href=""
+          ><img src="./icons/less-than-solid.svg" alt="more options"
+        /></a>
+        <a href=""><img src="./icons/bars-solid.svg" alt="hamburger icon" /></a>
+      </nav>
+      <nav class="nav-bar">
+        <a href="#">
+          <h1 class="logo-text">MedBookly</h1>
+        </a>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#">Booking</a></li>
+          <li class="nav-item"><a href="google.com">Settings</a></li>
+        </ul>
+        <div class="profile-end">
+          <span class="search-input">
+            <img
+              class="search-icon"
+              src="./search-icon.svg"
+              alt="search_icon"
+            />
+            <input class="nav-input" type="text" />
+          </span>
+          <span class="profile-avatar"
+            ><img src="./profile-avatar.svg" alt="profile_avatar"
+          /></span>
+          <span class="profile-name">Adewale</span>
+          <span class="details collapsible collapsible-true">
+            <span class="collapse-arrow arrow-right"
+              ><img class="" src="./more-arrow.svg" alt="search_icon"
+            /></span>
+          </span>
+          <div class="profile-drop">
+            <a href="#">View Profile</a>
+            <a href="#">Logout</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="flex-container-desktop">
+
+        <div class="main-wrapper">
+            <h1 class="title">Profile</h1>
+            <div class="flex-container flex-direction-column">
+                <div class="image-container">
+                    <div class="flex-container">
+                        <p class="roundbg">
+                            <img class="plus" src="../changeprofile/Union.svg" alt="plus">
+                        </p>
+                    </div>
+                    <a href="" class="text">Change Profile Picture</a>
+                    <div class="flex-container">
+                        <button class="btn btn-primary w-50">Edit Profile</button>
+                    </div>
+                </div>
+                <form action="" class="form-container">
+                    <div class="form-group">
+                        <label class="form-label" for="fname">First Name <span>*</span></label>
+                        <input class="form-input" type="text" id="fname" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="mname">Middle Name</label>
+                        <input class="form-input" type="text" id="mname" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="lname">Last Name <span>*</span></label>
+                        <input class="form-input" type="text" id="lname" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email Address <span>*</span></label>
+                        <input class="form-input" type="email" id="email" placeholder="admin@medbookly.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="dob">Date of Birth</label>
+                        <input class="form-input" type="date" id="dob" placeholder="dd-mm-yy" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="country">Country <span>*</span></label>
+                        <select name="country" onchange="printState('state',this.selectedIndex);" id="country"></select> 
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="location">location <span>*</span></label>
+                        <select name="state" id ="state"></select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="phoneNumber">Phone Number <span>*</span></label>
+                        <input class="form-input" type="tel" id="phoneNumber" placeholder="Phone Number" required>
+                    </div>
+
+                    <button class="btn btn-primary save-changes">Save Changes</button>
+                </form>
+        </div>
+      </div>
+    </main>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
+
+  </body>
+</html>
+
