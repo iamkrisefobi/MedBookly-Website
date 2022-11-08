@@ -31,6 +31,11 @@
     width: 100%;
 }
 
+.form-textarea { /*textarea properties*/
+    height: 80px;
+}
+
+
 .form-input-checkbox { /*input properties for type="checkbox"*/
     height: 16px;
     margin-left: 8px;
