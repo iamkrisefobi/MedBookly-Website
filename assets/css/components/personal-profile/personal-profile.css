@@ -95,6 +95,7 @@ button.save-changes {
   font-size: 16px;
   line-height: 19px;
 }
+
 /* For Tablet */
 
 @media (max-width: 799px) and (min-width: 521px) {

@@ -59,56 +59,56 @@
     </header>
     <main class="flex-container-desktop">
 
-        <div class="main-wrapper">
-            <h1 class="title">Profile</h1>
-            <div class="flex-container flex-direction-column">
-                <div class="image-container">
-                    <div class="flex-container">
-                        <p class="roundbg">
-                            <img class="plus" src="../changeprofile/Union.svg" alt="plus">
-                        </p>
-                    </div>
-                    <a href="" class="text">Change Profile Picture</a>
-                    <div class="flex-container">
-                        <button class="btn btn-primary w-50">Edit Profile</button>
-                    </div>
+      <div class="main-wrapper">
+        <h1 class="title">Profile</h1>
+        <div class="flex-container flex-direction-column">
+            <div class="image-container">
+                <div class="flex-container">
+                    <p class="roundbg">
+                        <img class="plus" src="../changeprofile/Union.svg" alt="plus">
+                    </p>
                 </div>
-                <form action="" class="form-container">
-                    <div class="form-group">
-                        <label class="form-label" for="fname">First Name <span>*</span></label>
-                        <input class="form-input" type="text" id="fname" placeholder="" required>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="mname">Middle Name</label>
-                        <input class="form-input" type="text" id="mname" placeholder="" required>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="lname">Last Name <span>*</span></label>
-                        <input class="form-input" type="text" id="lname" placeholder="" required>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="email">Email Address <span>*</span></label>
-                        <input class="form-input" type="email" id="email" placeholder="admin@medbookly.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="dob">Date of Birth</label>
-                        <input class="form-input" type="date" id="dob" placeholder="dd-mm-yy" required>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="country">Country <span>*</span></label>
-                        <select name="country" onchange="printState('state',this.selectedIndex);" id="country"></select> 
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="location">location <span>*</span></label>
-                        <select name="state" id ="state"></select>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="phoneNumber">Phone Number <span>*</span></label>
-                        <input class="form-input" type="tel" id="phoneNumber" placeholder="Phone Number" required>
-                    </div>
-
-                    <button class="btn btn-primary save-changes">Save Changes</button>
-                </form>
+                <a href="" class="text">Change Profile Picture</a>
+                <div class="flex-container">
+                    <button class="btn btn-primary w-50">Edit Profile</button>
+                </div>
+            </div>
+            <form action="" class="form-container">
+                <div class="form-group">
+                    <label class="form-label" for="fname">First Name <span>*</span></label>
+                    <input class="form-input" type="text" id="fname" placeholder="" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="mname">Middle Name</label>
+                    <input class="form-input" type="text" id="mname" placeholder="" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="lname">Last Name <span>*</span></label>
+                    <input class="form-input" type="text" id="lname" placeholder="" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email Address <span>*</span></label>
+                    <input class="form-input" type="email" id="email" placeholder="admin@medbookly.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="dob">Date of Birth</label>
+                    <input class="form-input" type="date" id="dob" placeholder="dd-mm-yy" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="country">Country <span>*</span></label>
+                    <select name="country" onchange="printState('state',this.selectedIndex);" id="country" class="countryStr"></select> 
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="location">location <span>*</span></label>
+                    <select name="state" id ="state" class="countryStr"></select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="phoneNumber">Phone Number <span>*</span></label>
+                    <input class="form-input" type="tel" id="phoneNumber" placeholder="Phone Number" required>
+                </div>
+                
+                <button class="btn btn-primary save-changes">Save Changes</button>
+            </form>
         </div>
       </div>
     </main>
