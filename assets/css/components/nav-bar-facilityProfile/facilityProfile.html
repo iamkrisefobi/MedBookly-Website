@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>facility-profile</title>
-    <link rel="stylesheet" href="./nav-bar-facilityProfile.css" />
+    <link rel="stylesheet" href="./facilityProfile.css" />
   </head>
   <body>
        <!-- nav-bar section -->
@@ -62,10 +62,10 @@
               
               <div class="image-container">
                 <div class="settings-container">
-                  <div class="heading">
-                      <h1>Settings</h1>
+                  <div class="settings-heading">
+                      <span>Settings</span>
                   </div>
-                  <div class="items">
+                  <div class="settings-options">
                       <a href="#" class="profile">Profile Settings</a>
                       <a href="#" class="deactivate">Deactivate Account<a>
                   </div>
@@ -77,32 +77,34 @@
                 <h1 class="title">Faculty Profile</h1>
                 <form action="" class="form-container">
                   <div class="form-group">
-                      <label class="form-label" for="email">Email Address <span>*</span></label>
-                      <input class="form-input" type="email" id="email" placeholder="newtonhospital@gmail.com" required>
+                    <label class="form-label" for="email">Email Address <span>*</span></label>
+                    <input class="form-input" type="email" id="email" placeholder="newtonhospital@gmail.com" required>
                   </div>
                   <div class="form-group">
-                      <label class="form-label" for="facilityName">Facility Name <span>*</span></label>
-                      <input class="form-input" type="text" id="facilityName" placeholder="Facility Name" required>
+                    <label class="form-label" for="facilityName">Facility Name <span>*</span></label>
+                    <input class="form-input" type="text" id="facilityName" placeholder="Facility Name" required>
                   </div>
                   <div class="form-group">
-                      <label class="form-label" for="services">Services</label>
-                      <input class="form-input" type="text" id="services" placeholder="Services" required>
+                    <label class="form-label" for="services">Services</label>
+                    <input class="form-input" type="text" id="services" placeholder="Services" required>
                   </div>
                   <div class="form-group">
-                      <label class="form-label" for="Address">Address</label>
-                      <input class="form-input" type="text" id="Address" placeholder="Address" required>
+                    <label class="form-label" for="Address">Address</label>
+                    <input class="form-input" type="text" id="Address" placeholder="Address" required>
                   </div>
                   <div class="form-group">
-                      <label class="form-label" for="country">Country <span>*</span></label>
-                      <select name="country" onchange="printState('state',this.selectedIndex);" id="country"></select>
+                    <label class="form-label" for="country">Country <span>*</span></label>
+                    <select class="form-input" name="country" onchange="printState('state',this.selectedIndex);" id="country"></select> 
                   </div>
                   <div class="form-group">
-                      <label class="form-label" for="location">State <span>*</span></label>
-                      <select name="state" id ="state"></select>
+                    <label class="form-label" for="state">State <span>*</span></label>
+                    <select class="form-input" name="state" id="state">
+                    <option value="">Select Country first</option>
+                    </select>
                   </div>
                   <div class="form-group">
-                      <label class="form-label" for="phoneNumber">Phone Number <span>*</span></label>
-                      <input class="form-input" type="tel" id="phoneNumber" placeholder="Phone Number" required>
+                    <label class="form-label" for="phoneNumber">Phone Number <span>*</span></label>
+                    <input class="form-input" type="tel" id="phoneNumber" placeholder="Phone Number" required>
                   </div>
                   <div class="form-group">
                     <label class="form-label" for="description">Description</label>
@@ -114,32 +116,27 @@
 
               <!-- Facility Images -->
 
-              <div style="background: black; height: 100px; width: 100px; margin: 0;"></div>
-              <!-- <div class="background"> -->
-                <!-- <div class="container">
-                  <div class="name">
-                    <span class="name">Facility Name</span>
-                  </div>
-                    <p class="grey bigbox"></p>
-                    <div class="box">
-                      <p class="grey smallbox"></p>
-                      <p class="grey smallbox"></p>
-                      <p class="grey smallbox">
-                        <img class="icon" src="./Union (1).svg" alt="plus">
-                    </p>
-                    </div>  
-                        <div class="text">
-                  <p class="label">Reg No: <span>00000-00000</span></p>
-                  <p class="label">Status: <span>Inactive</span></p>
-                            </div>
-                </div> -->
-              </div>
+              <div class="facility-container">
+                <span class="facility-name">Facility Name</span>
+                <div class="grey-bg big-box"></div>
+                <div class="box-group">
+                  <span class="grey-bg small-box"></span>
+                  <span class="grey-bg small-box"></span>
+                  <span class="grey-bg small-box">
+                    <img class="plus-icon" src="./Union (1).svg" alt="plus">
+                  </span>
+                </div>  
+                <div class="facility-code">
+                  <p class="facility-label">Reg No: <span>00000-00000</span></p>
+                  <p class="facility-label">Status: <span>Inactive</span></p>
+                </div>
+            </div>
           </div>
       </div>
   </main>
 
     <!-- Link to js country file -->
-  <script src="app.js">
+  <script src="../app.js">
   </script>
   </body>
 </html>

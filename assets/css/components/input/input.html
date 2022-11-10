@@ -8,8 +8,14 @@
 
 <!-- For Email -->
 <div class="form-group">
-    <label class="form-label" for="email">Email</label>
+    <label class="form-label" for="email">Email <span>*</span></label>
     <input class="form-input" type="email" id="email" placeholder="Email" required>
+</div>
+
+<!-- For Phone Number -->
+<div class="form-group">
+    <label class="form-label" for="phoneNumber">Phone Number <span>*</span></label>
+    <input class="form-input" type="tel" id="phoneNumber" placeholder="Phone Number" required>
 </div>
 
 <!-- For Password -->
@@ -29,9 +35,24 @@
     <input class="form-submit" type="submit" value="Sign In">
 </div>
 
+<!-- For Select input (country) -->
+<div class="form-group">
+    <label class="form-label" for="country">Country <span>*</span></label>
+    <select class="form-input" name="country" onchange="printState('state',this.selectedIndex);" id="country"></select> 
+</div>
+
+<!-- For Select input (state) -->
+<div class="form-group">
+    <label class="form-label" for="state">State <span>*</span></label>
+    <select class="form-input" name="state" id="state">
+        <option value="">Select Country first</option>
+    </select>
+</div>
+
 <!-- For Textarea -->
 <div class="form-group">
-    <label class="form-label" for="text">Firstname</label>
+    <label class="form-label" for="text">Description</label>
     <textarea name="name" id="name" cols="30" rows="5" resize="none">Sample Place holder text</textarea>
     <!-- <input class="form-input" type="text" id="text" placeholder="text" required> -->
 </div>
+

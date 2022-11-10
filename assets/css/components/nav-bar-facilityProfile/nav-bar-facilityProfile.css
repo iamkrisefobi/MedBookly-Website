@@ -31,7 +31,7 @@ body {
 }  
 
 .settings-heading {
-  /* width: 100%; */
+  width: 100%;
   padding: 10px 20px;
   font-style: normal;
   font-weight: 500;
@@ -133,12 +133,13 @@ body {
 @media screen and (min-width: 800px) {
 
     .facility-content {
+      background: yellow;
+      width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
-      flex-wrap: wrap;
-
-      /* align-items: center; */
+      align-items: center;
+      /* gap: ; */
     }
 
     .div-1 {
@@ -154,5 +155,11 @@ body {
 
     .div-3 {
       background: blue;
+    }
+
+    .facility-content div {
+      height: 200px;
+      width: 200px;
+      background: pink;
     }
 }

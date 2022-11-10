@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>facility-profile</title>
+    <link rel="stylesheet" href="./new-facilityProfile.css" />
+  </head>
+  <body>
+      <!-- nav-bar section -->
+      <header class="header">
+
+      <!-- mobile nav -->
+      <nav class="nav-small">
+        <a href="#"><img src="./icons/less-than-solid.svg" alt="back arrow"/>
+        </a>
+        <a href="#"><img src="./icons/bars-solid.svg" alt="hamburger icon" />
+        </a>
+      </nav>
+
+      <!-- desktop nav -->
+      <nav class="nav-bar">
+        <a href="#">
+          <h1 class="logo-text">MedBookly</h1>
+        </a>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#">Booking</a></li>
+          <li class="nav-item"><a href="#">Settings</a></li>
+        </ul>
+        <div class="profile-end">
+          <span class="search-input">
+            <img class="search-icon" src="./icons/search-icon.svg" alt="search_icon" />
+            <input class="nav-input" type="text" />
+          </span>
+          <span class="profile-avatar"
+            ><img src="./icons/profile-avatar.svg" alt="profile_avatar"/>
+          </span>
+          <span class="profile-name">Adewale</span>
+          <span class="details collapsible collapsible-true">
+            <span class="collapse-arrow arrow-right"
+              ><img class="" src="./icons/more-arrow.svg" alt="search_icon"/>
+            </span>
+          </span>
+          <div class="profile-drop">
+            <a href="#">View Profile</a>
+            <a href="#">Logout</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    
+  <!-- main wrapper section -->
+  <div class="facility-content">
+    <div>
+        <h1 class="">Settings</h1>
+        <div class="">
+            <a href="#" class="profile">Profile Settings</a>
+            <a href="#" class="deactivate">Deactivate Account<a>
+        </div>
+    </div>
+
+    <div>
+        <div class="facility-container">
+            <span class="facility-name">Facility Name</span>
+            <div class="grey-bg big-box"></div>
+            <div class="box-group">
+              <span class="grey-bg small-box"></span>
+              <span class="grey-bg small-box"></span>
+              <span class="grey-bg small-box">
+                <img class="plus-icon" src="./Union (1).svg" alt="plus">
+              </span>
+            </div>  
+            <div class="facility-code">
+              <p class="facility-label">Reg No: <span>00000-00000</span></p>
+              <p class="facility-label">Status: <span>Inactive</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1 class="title">Faculty Profile</h1>
+                <form action="" class="form-container">
+                  <div class="form-group">
+                      <label class="form-label" for="email">Email Address <span>*</span></label>
+                      <input class="form-input" type="email" id="email" placeholder="newtonhospital@gmail.com" required>
+                  </div>
+                  <div class="form-group">
+                      <label class="form-label" for="facilityName">Facility Name <span>*</span></label>
+                      <input class="form-input" type="text" id="facilityName" placeholder="Facility Name" required>
+                  </div>
+                  <div class="form-group">
+                      <label class="form-label" for="services">Services</label>
+                      <input class="form-input" type="text" id="services" placeholder="Services" required>
+                  </div>
+                  <div class="form-group">
+                      <label class="form-label" for="Address">Address</label>
+                      <input class="form-input" type="text" id="Address" placeholder="Address" required>
+                  </div>
+                  <div class="form-group">
+                      <label class="form-label" for="country">Country <span>*</span></label>
+                      <select name="country" onchange="printState('state',this.selectedIndex);" id="country"></select>
+                  </div>
+                  <div class="form-group">
+                      <label class="form-label" for="location">State <span>*</span></label>
+                      <select name="state" id ="state"></select>
+                  </div>
+                  <div class="form-group">
+                      <label class="form-label" for="phoneNumber">Phone Number <span>*</span></label>
+                      <input class="form-input" type="tel" id="phoneNumber" placeholder="Phone Number" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="description">Description</label>
+                    <textarea class="form-input form-textarea" name="description" id="description" cols="30" rows="3" resize="none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, dignissimos.</textarea>
+                  </div>
+                  <button class="btn btn-primary save-changes">Save Changes</button>
+                </form>
+    </div>
+    
+
+
+
+    
+    
+
+  
+    
+    
+  </div>
+
+  <!-- Link to js country file -->
+  <script src="app.js">
+  </script>
+  </body>
+  </html>
