@@ -1,4 +1,5 @@
-___
+# MedBookly_App
+This *README* contains the Objectives of the Project and How exactly to use the MedBooklyapp efficiently.
 ## Background and Strategic Fit
 *The objective of this project* is to streamline the process of booking a medical appointment by the users and managing the volume of appointments by the hospital Admins. Patients can easily book an appointment, be notified about it, provide relevant information to the doctor beforehand, and also reschedule or cancel the appointment and enable the clinic to streamline its appointments and daily tasks. It also enables the hospital Admin to reduce the mundane tasks of scheduling appointments for patients manually. The application is developed with two dashboards, one for the patient to create their profile and another for the hospital admin to have an overview of the appointments booked and manage the process seamlessly. 
 
@@ -17,7 +18,31 @@ MedBookly will be an application that can assist people in booking medical appoi
 |--|--|
 | Increase adoption rate by 50% from launch date| 1. Number of Signups 2. Number of appointments booked 3. Number of Patients attended to. |
 |Increase Customer retention rate by 20% every quarter| 1. Active Users - Daily and Monthly. 2. User reviews 3. The rate of booking completion 4. Repeat transactions and how often users use the application.|
----
+
+
+## Recommended IDE Setup
+
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+
+## Project Setup
+
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
+##  Recommended Browsers
+[Chrome](https://www.google.com/chrome/thank-you.html?statcb=1&installdataindex=empty&defaultbrowser=0#) and [FireFox](https://download.mozilla.org/?product=firefox-stub&os=win&lang=en-US&attribution_code=c291cmNlPXd3dy5nb29nbGUuY29tJm1lZGl1bT1yZWZlcnJhbCZjYW1wYWlnbj0obm90IHNldCkmY29udGVudD0obm90IHNldCkmZXhwZXJpbWVudD0obm90IHNldCkmdmFyaWF0aW9uPShub3Qgc2V0KSZ1YT1jaHJvbWUmdmlzaXRfaWQ9MTAyNzA1MjMzOS4xNjUyNjk0MTE1&attribution_sig=e13caa27fceae17a3cf95f427fbf971316f1f36ec14fd25a3232e19c6e515240&_gl=1*2s7pn9*_ga*MTAyNzA1MjMzOS4xNjUyNjk0MTE1*_ga_MQ7767QQQW*MTY2ODA4MDYxMi4xLjEuMTY2ODA4MDYxNS4wLjAuMA..)
 ## System Specifications 
 
  - Default location: Nigeria. 
