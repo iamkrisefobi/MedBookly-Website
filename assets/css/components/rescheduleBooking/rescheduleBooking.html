@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rescheduleBooking</title>
+    <link rel="stylesheet" href="./rescheduleBooking.css" />
+</head>
+<body>
+    <div class="main-container">
+        <div class="reschedule-container">
+            <span class="close-icon"><img src="./close-icon.svg" alt=""></span>
+            <div class="heading-container">
+                <h4 class="reschedule-heading">Reschedule Booking</h4>
+                <span class="reschedule-description">You can select a new date and time for your appointment.</span>
+            </div>
+            <form action="" class="form-container">
+                <div class="form-content">
+                    <!-- For Time -->
+                    <div class="form-group">
+                        <label class="form-label" for="apptTime">Appointment Time</label>
+                        <input class="form-input" type="time" id="apptTime" placeholder="" required>
+                    </div>
+                    <!-- For Date -->
+                    <div class="form-group">
+                        <label class="form-label" for="apptDate">Appointment Date</label>
+                        <input class="form-input" type="date" id="apptDate" placeholder="" required>
+                    </div>
+                </div>
+                <button class="btn btn-primary">Confirm</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

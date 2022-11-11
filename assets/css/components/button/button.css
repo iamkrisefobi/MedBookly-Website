@@ -39,4 +39,15 @@
     background: var(--color-secondary);
 }
 
+.btn-danger { /*This is button with danger color as background*/
+    border: 1px solid var(--color-danger);
+    background: var(--color-danger);
+    color: var(--color-secondary);
+}
 
+/* For Desktop */
+@media screen and (min-width: 1024px) {
+    .btn { /*This is the generic button structure*/
+        height: 44px;    
+    }
+}

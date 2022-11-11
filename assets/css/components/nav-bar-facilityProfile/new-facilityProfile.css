@@ -1,0 +1,15 @@
+/* @import url(../../main.css);
+@import url(../button/button.css);
+@import url(../nav-bar/nav-bar.css);
+@import url(../input/input.css); */
+
+body {
+  background-color: var(--color-background);
+  background-color: #f5f8ff;
+}  
+
+.facility-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    /* ali */
+}

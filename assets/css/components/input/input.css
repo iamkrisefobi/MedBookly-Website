@@ -31,6 +31,11 @@
     width: 100%;
 }
 
+.form-textarea { /*textarea properties*/
+    height: 80px;
+}
+
+
 .form-input-checkbox { /*input properties for type="checkbox"*/
     height: 16px;
     margin-left: 8px;
@@ -45,7 +50,7 @@
 
 
 /* For Desktop */
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
     .form-label, .form-label-inline {
         font-size: 14px;
         font-weight: 400;
