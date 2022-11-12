@@ -18,15 +18,16 @@ margin-top: 40px;
 }
 
 .current{
-  font-size: 17px;
   font-weight: 600;
-  border-bottom: 2.5px solid;
   float: left;
   margin-right: 95px;
 }
 
 .activity{
-font-weight: 600;
+  font-size: 17px;
+  font-weight: 600;
+  border-bottom: 2px solid;
+  display: inline-block;
 }
 
 .content{

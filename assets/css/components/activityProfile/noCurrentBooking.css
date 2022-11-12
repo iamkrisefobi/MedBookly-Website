@@ -21,6 +21,7 @@ margin-top: 40px;
   font-size: 17px;
   font-weight: 600;
   border-bottom: 2.5px solid;
+  display: inline-block;
   float: left;
   margin-right: 95px;
 }
