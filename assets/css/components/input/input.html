@@ -1,5 +1,7 @@
 <!-- Input and Label Template -->
 
+<form action="" class="form-container"></form>
+
 <!-- For Text -->
 <div class="form-group">
     <label class="form-label" for="text">Firstname</label>
@@ -49,10 +51,21 @@
     </select>
 </div>
 
+<!-- For Time -->
+<div class="form-group">
+    <label class="form-label" for="apptTime">Time</label>
+    <input class="form-input" type="time" id="apptTime" placeholder="" required>
+</div>
+
+<!-- For Date -->
+<div class="form-group">
+    <label class="form-label" for="apptDate">Date</label>
+    <input class="form-input" type="date" id="apptDate" placeholder="" required>
+</div>
+
 <!-- For Textarea -->
 <div class="form-group">
-    <label class="form-label" for="text">Description</label>
-    <textarea name="name" id="name" cols="30" rows="5" resize="none">Sample Place holder text</textarea>
-    <!-- <input class="form-input" type="text" id="text" placeholder="text" required> -->
+    <label class="form-label" for="textArea">Description</label>
+    <textarea class="form-textarea" name="name" id="textArea" cols="30" rows="5" resize="none">Sample Place holder text</textarea>
 </div>
 
