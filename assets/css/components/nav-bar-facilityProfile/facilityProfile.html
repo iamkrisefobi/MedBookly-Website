@@ -12,12 +12,14 @@
        <header class="header">
 
         <!-- mobile nav -->
-        <nav class="nav-small">
-          <a href="#"><img src="./icons/less-than-solid.svg" alt="back arrow"/>
-          </a>
-          <a href="#"><img src="./icons/bars-solid.svg" alt="hamburger icon" />
-          </a>
-        </nav>
+      <nav class="nav-small">
+        <a  href="#"
+          ><img class="back-button" src="./icons/back.svg" alt="back arrow" />
+        </a>
+        <a class="collasped-meun" href="#"
+          ><img class="collasped-meun" src="./icons/bars-solid.svg" alt="hamburger icon" />
+        </a>
+      </nav>
   
         <!-- desktop nav -->
         <nav class="nav-bar">
@@ -56,24 +58,40 @@
     <main class="flex-container-desktop">
       <div class="main-wrapper">
           <!-- <div class="flex-content flex-container flex-direction-column"> -->
-          <div class="flex-content">
+            <div class="flex-content">
+            
+
               
-            <!-- settings section -->
-              
-              <div class="image-container">
-                <div class="settings-container">
-                  <div class="settings-heading">
-                      <span>Settings</span>
+
+                <!-- Facility Images -->
+
+                <div class="facility-container">
+                  <div class="facility-container-control">
+                    <h1 class="title-mobile">Faculty Profile</h1>
+                    <span class="facility-name-web">Facility Name</span>
+                  <div class="box-container">
+                    <div class="grey-bg big-box"></div>
+                    <!-- <div class="box-group"> -->
+                      <span class="grey-bg small-box"></span>
+                      <span class="grey-bg small-box"></span>
+                      <span class="grey-bg small-box">
+                        <img class="plus-icon" src="./icons/Union (1).svg" alt="plus">
+                      </span>
+                    <!-- </div>  -->
+                  </div> 
+                    <div class="facility-code">
+                      <p class="facility-name-mobile">Facility Name</p>
+                      <p class="facility-label">Reg No: <span>00000-00000</span></p>
+                      <p class="facility-label">Status: <span>Inactive</span></p>
+                    </div>
                   </div>
-                  <div class="settings-options">
-                      <a href="#" class="profile">Profile Settings</a>
-                      <a href="#" class="deactivate">Deactivate Account<a>
-                  </div>
-                </div>
+                  
+                  
+                 
               </div>
 
               <!-- Form Elements -->
-              <div>
+              <div class="form-main">
                 <h1 class="title">Faculty Profile</h1>
                 <form action="" class="form-container">
                   <div class="form-group">
@@ -113,25 +131,22 @@
                   <button class="btn btn-primary save-changes">Save Changes</button>
                 </form>
               </div>
-
-              <!-- Facility Images -->
-
-              <div class="facility-container">
-                <span class="facility-name">Facility Name</span>
-                <div class="grey-bg big-box"></div>
-                <div class="box-group">
-                  <span class="grey-bg small-box"></span>
-                  <span class="grey-bg small-box"></span>
-                  <span class="grey-bg small-box">
-                    <img class="plus-icon" src="./Union (1).svg" alt="plus">
-                  </span>
-                </div>  
-                <div class="facility-code">
-                  <p class="facility-label">Reg No: <span>00000-00000</span></p>
-                  <p class="facility-label">Status: <span>Inactive</span></p>
+              
+              <!-- settings section -->
+                
+                <div class="image-container">
+                  <div class="settings-container">
+                    <div class="settings-heading">
+                        <span>Settings</span>
+                    </div>
+                    <div class="settings-options">
+                        <a href="#" class="profile">Profile Settings</a>
+                        <a href="#" class="deactivate">Deactivate Account<a>
+                    </div>
+                  </div>
                 </div>
-            </div>
           </div>
+          <a href="#" class="deactivate-mobile">Deactivate Account<a></a>
       </div>
   </main>
 
