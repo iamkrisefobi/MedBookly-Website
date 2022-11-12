@@ -50,9 +50,6 @@ text-align: center;
 align-items: center;
 justify-content: center;
 }
-/* .icon{
-  display: none;
-} */
 
 /* Mobile view */
 @media screen and (max-width: 520px) {
