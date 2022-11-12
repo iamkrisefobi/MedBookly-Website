@@ -50,9 +50,35 @@ text-align: center;
 align-items: center;
 justify-content: center;
 }
+/* .icon{
+  display: none;
+} */
 
 /* Mobile view */
-@media screen and (min-width: px) {
-
-   
+@media screen and (max-width: 520px) {
+  .content{
+  margin-left: 20px;
+  margin-right: 80px;
+  margin-top: 250px;
+  }
+.text{
+  font-size: 25px;
+}
+.button{
+  display: none;
+}
+.icon{
+  background-color: var(--color-primary);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+.plus{
+  margin-top: 10px;
+  margin-left: 11px;
+}
+ 
 }

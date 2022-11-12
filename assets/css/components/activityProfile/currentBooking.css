@@ -44,10 +44,11 @@ font-weight: 600;
 }
 
 .view{
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
   float: right;
-
+  color: var(--color-primary);
 }
 .secondbox{
   width: 1080px;
