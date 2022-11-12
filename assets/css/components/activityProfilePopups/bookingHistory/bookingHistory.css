@@ -35,25 +35,6 @@
     line-height: 16px;
 }
 
-/* .exclamation-circle {
-    right: 16px;
-    top: 16px;
-} */
-
-/* .booking-content {
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-} */
-
-/* .booking-description { 
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16.8px;
-} */
-
 .btn-group {
     display: flex;
     flex-direction: column;
@@ -66,7 +47,6 @@
     .booking-container {
         border-radius: 10px;
         width: 500px;
-        /* height: 322px; */
         padding: 85px 40px;
     }
 
@@ -80,6 +60,3 @@
         margin: 24px 0px 0px;
     }
 }
-
-
-

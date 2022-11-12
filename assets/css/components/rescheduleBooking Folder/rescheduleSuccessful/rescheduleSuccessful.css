@@ -1,7 +1,7 @@
-@import url(../../main.css);
-@import url(../button/button.css);
-@import url(../nav-bar/nav-bar.css);
-@import url(../input/input.css);
+@import url(../../../main.css);
+@import url(../../button/button.css);
+@import url(../../nav-bar/nav-bar.css);
+@import url(../../input/input.css);
 
 .main-container {
     background: black;
