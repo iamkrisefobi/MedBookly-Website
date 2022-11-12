@@ -1,0 +1,77 @@
+@import url(../../../main.css);
+@import url(../../button/button.css);
+@import url(../../nav-bar/nav-bar.css);
+@import url(../../input/input.css);
+
+.main-container {
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.activity-container{
+    position: relative;
+    width: 312px;
+    background: var(--color-secondary);
+    padding: 40px 20px;
+    margin: auto;
+    flex-direction: column;
+}
+
+.close-icon {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+.exclamation-circle {
+    right: 16px;
+    top: 16px;
+}
+
+.activity-content {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-description { 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.8px;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 24px 0 0;
+}
+
+/* For tablet and desktop devices */
+@media (min-width: 1024px) {
+    .activity-container {
+        border-radius: 10px;
+        width: 500px;
+        height: 322px;
+        padding: 40px 50px;
+    }
+
+    .activity-description { 
+        margin-top: 24px;
+        line-height: 17px;
+    }
+    
+    .btn-group {
+        margin: 42px 13px;
+    }
+}
+
+
+
