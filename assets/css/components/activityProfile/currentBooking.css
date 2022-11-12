@@ -58,7 +58,25 @@ font-weight: 600;
 }
 
 /* Mobile view */
-@media screen and (min-width: px) {
+@media screen and (max-width: 520px) {
+.container{
+margin-left: 30px;
+}
+.current{
+  margin-right: 155px;
+}
+.firstbox{
+  background-color: var(--color-secondary);
+  width: 360px;
+  margin-top:0px;
+}
+.secondbox{
+  background-color: var(--color-secondary);
+  width: 360px;
+}
+.text{
+  font-size: 15px;
+}
 
    
 }
