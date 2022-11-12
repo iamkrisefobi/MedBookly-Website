@@ -1,0 +1,187 @@
+@import url(../../../main.css);
+@import url(../../button/button.css);
+@import url(../../input/input.css);
+@import url(../../nav-bar/nav-bar.css);
+
+
+/* Notification model starts here */
+.notify-container {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 0px 2px 2px;
+    padding: 10px;
+    margin: 10px;
+}
+.notify-container label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.85);
+    margin-left: 10px;
+}
+@media screen and (min-width: 800px) {
+    .notify-container {
+        width: 30%;
+        margin: 20px auto;
+    }
+}
+/* Notification model ends here */
+
+/* Calendar starts here */
+/* Calendar ends here */
+
+/* Facility selection starts here  */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(185, 179, 174);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(136, 136, 136);
+}
+.facility {
+    margin: 50px 10px 0;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+.faci-overflow {
+    overflow-y: scroll;
+    height: 300px;
+}
+.search-bar {
+    position: relative;
+}
+.search-img {
+    position: absolute;
+    top: 27%;
+    left: 2%;
+}
+.form-input2 { /*input properties*/
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #D9D9D9;;
+    font-size: 12px;
+    font-weight: 400;
+    height: 40px;
+    line-height: 16px;
+    margin: 8px 0 12px;
+    outline: 0;
+    padding: 12px 12px 12px 50px;
+    width: 100%;
+}
+.facility-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #8C8C8C;
+    padding: 5px 0 10px;
+}
+.facility-list {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    padding-bottom: 10px;
+    margin:0 15px 15px 0;
+    
+}
+.facility-list img {
+    border-radius: 3px;
+    width: 100%;
+}
+.facility-list .hospital-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 10px;
+    border-bottom: 0.2px solid #d7d6d6;
+}
+.facility-list .hospital-name h3, .hospital-name a, p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+}
+.hospital-name a{
+    color: #1890FF;
+    text-decoration: none;
+}
+.facility-list p{
+    color: #8C8C8C;
+    padding: 0 20px;
+}
+button.save-changes-pop {
+    width: 95%;
+    display: block;
+    margin: 10px auto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+@media screen and (min-width: 800px) {
+    .facility {
+        width: 30%;
+        margin: 20px auto;
+        color: rgba(0, 0, 0, 0.45);
+    }
+    .flex-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        padding-top: 20px;
+    }
+    .facility-text {
+        padding-left: 10px;
+    }
+    .facility-details {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        
+    }
+    .facility-list .hospital-name h3 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .hospital-name a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    button.save-changes-pop {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+/* Facility selection ends here */
+
+/* Specialist section starts here */
+.faci-overflow-spec {
+    overflow-y: scroll;
+    height: 100px;
+    margin-left: 20px;
+} 
+.faci-overflow-spec label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.85);
+    margin-left: 10px;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+/* Specialist section ends here */

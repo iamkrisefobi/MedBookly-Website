@@ -1,0 +1,116 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+.background-container{
+    width: 100vw;
+    height: 100vh ;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+
+}
+.created-container {
+    background-color: #fff;
+    width: 300px;
+    position: relative;
+    box-shadow: 0px 4px 20px rgba(186, 197, 255, 0.25);
+    border-radius: 10px;
+    padding: 0 26px;
+    margin: auto;
+    animation: scale 0.2s forwards ease-in;
+}
+
+.created-check-image {
+    width: 72px;
+    height: 72px;
+    margin: 62px 0 24px;
+}
+
+.created-header-text h1{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 24px;
+}
+.created-header-text p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.btn-continue {
+    background: #246BFD;
+    border: 1px solid #246BFD;  
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    border-radius: 3px;
+    width: 90%;
+    height: 40px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    cursor: pointer;
+    margin: 30px 0 40px;
+}
+
+.btn-continue:hover {
+    background: #1F5BD7;
+    border: 1px solid #1F5BD7;
+}
+
+.btn-continue:active {
+    background: #4B86FD;
+    border: 1px solid #4B86FD;
+    box-shadow: 0px 0px 0px 5px #4B86FD1A; 
+}
+
+@keyframes scale {
+    0% {transform: scale(1,1);}
+    70% {transform: scale(1.1,1.1);}
+    100% {transform: scale(1,1);}
+  }
+
+@media (min-width: 800px) {
+    .created-container { 
+        padding: 0 60px;
+        width: 500px;
+        /* height: 310px;      */
+    }
+
+    .created-check-image {
+        margin: 60px 0 20px;
+    }
+    .created-header-text {
+        text-align: center;
+        color: #262626;
+    }
+    .created-header-text h1 {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .created-header-text p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .btn-continue {
+        height: 44px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        margin:20px 0 40px;
+    }
+}
+
+
+
