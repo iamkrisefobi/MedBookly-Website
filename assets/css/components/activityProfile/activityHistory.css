@@ -1,0 +1,105 @@
+@import url(../../main.css);
+@import url(../button/button.css);
+@import url(../nav-bar/nav-bar.css);
+@import url(../input/input.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+/* imported the font.... */
+
+body {
+  background-color: var(--color-secondary);
+  font-family: 'Lato', sans-serif;
+}
+/* Desktop view */
+.container{
+  margin-left: 100px;
+}
+.tab{
+margin-top: 40px;
+}
+.bookings{
+    display: flex;
+   
+}
+.first{
+    margin-right: 20px;
+}
+.second{
+    margin-right: 20px;
+}
+.third{
+    
+}
+.current{
+  font-weight: 600;
+  float: left;
+  margin-right: 95px;
+  margin-bottom: 15px;
+}
+
+.activity{
+font-size: 17px;
+font-weight: 600;
+margin-bottom: 15px;
+border-bottom: 3px solid;
+display: inline-block;
+}
+
+.firstbox{
+  margin-top: 32px;
+  width: 1080px;
+  height: 78px;
+  background-color: #f8cdcd; 
+  /* add to list of colors */
+  padding: 24px 26px;
+  margin-bottom: 5px;
+}
+.text{
+  font-size: 15px;
+  float: left;
+}
+
+.delete{
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  float: right;
+  margin-left: 20px;
+  color: var(--color-danger);
+}
+.view{
+font-size: 14px;
+font-weight: 500;
+text-decoration: none;
+float: right;
+color: var(--color-primary); 
+}
+.secondbox{
+  width: 1080px;
+  height: 78px;
+  background-color: #d9f7d6; 
+  padding: 24px 26px;
+}
+
+/* Mobile view */
+@media screen and (max-width: 520px) {
+.container{
+margin-left: 30px;
+}
+.current{
+  margin-right: 155px;
+}
+.firstbox{
+  background-color: var(--color-secondary);
+  width: 360px;
+  margin-top:0px;
+}
+.secondbox{
+  background-color: var(--color-secondary);
+  width: 360px;
+}
+.text{
+  font-size: 15px;
+}
+
+   
+}
