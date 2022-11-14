@@ -1,0 +1,153 @@
+@import url(../../main.css);
+@import url(../button/button.css);
+@import url(../input/input.css);
+@import url(../nav-bar/nav-bar.css);
+
+body {
+  background-color: var(--color-background);
+  background-color: #f5f8ff;
+}
+/* Nav Bar */
+.nav-bar {
+  display: none;
+}
+.nav-small {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 25px;
+}
+.nav-small img {
+  width: 25px;
+  height: 25px;
+  opacity: 0.8;
+}
+/* Nav bar ends here */
+
+.main-wrapper {
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(186, 197, 255, 0.25);
+  border-radius: 10px;
+  margin: 5px 0 40px;
+  padding: 30px;
+  width: 90%;
+}
+
+.title2 {
+    text-align: center;
+}
+
+.main-wrapper .title-main {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0;
+}
+
+.main-wrapper .subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #595959;
+    width: 70%;
+    margin: 5px auto 20px;
+}
+
+.form-input {
+  /*input properties*/
+  border: 1px solid #d9d9d9;
+  color: var(--color-black);
+}
+
+/* Button */
+button.save-changes {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.mb-5 {
+  margin: 20px 0;
+}
+
+.flex-container-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.form-container {
+    margin: 0 auto;
+    width: 100%;
+}
+/* Down arrow positioning */
+.arrow-position {
+  position: relative;
+}
+.arrow-img {
+  position: absolute;
+  bottom: 37%;
+  right: 2.5%;
+  cursor: pointer;
+}
+.form-input3 { /*input properties*/
+  border: 1px solid #D9D9D9;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #D9D9D9;;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 8px 0 12px;
+  outline: 0;
+  padding: 12px 12px 12px 50px;
+  width: 100%;
+}
+
+/* For Tablet */
+
+@media (max-width: 799px) and (min-width: 521px) {
+  .nav-bar {
+    display: none;
+  }
+  .nav-small{
+    padding: 30px 80px ;
+  }
+  .main-wrapper {
+    width: 80%;
+  }
+  .form-input {
+    margin-bottom: 24px;
+  }
+
+}
+
+/* For Desktop */
+@media screen and (min-width: 800px) {
+
+    .nav-small {
+        display: none;
+    }
+    .nav-bar {
+        display: flex;
+    }
+    .main-wrapper {
+        width: 70%;
+        margin-top: 50px;
+    }
+    .form-input {
+        margin-bottom: 24px;
+    }
+    .form-container {
+        margin: 0 auto;
+        width: 50%;
+    }
+    .main-wrapper .title-main {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+        margin: 30px 0 0 0;
+    }
+    .main-wrapper .subtitle {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
