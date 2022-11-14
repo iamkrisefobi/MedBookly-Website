@@ -1,0 +1,81 @@
+@import url(../../main.css);
+@import url(../button/button.css);
+@import url(../nav-bar/nav-bar.css);
+@import url(../input/input.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+/* imported the font.... */
+
+body {
+  background-color: var(--color-secondary);
+  font-family: 'Lato', sans-serif;
+}
+/* Desktop view */
+.container{
+  margin-left: 100px;
+}
+.tab{
+margin-top: 40px;
+}
+
+.current{
+  font-size: 17px;
+  font-weight: 600;
+  border-bottom: 2.5px solid;
+  display: inline-block;
+  float: left;
+  margin-right: 95px;
+}
+
+.activity{
+font-weight: 600;
+}
+
+.content{
+padding-top: 150px;
+text-align: center;
+}
+
+.text{
+color: #8c8c8c;
+/* add to color list */
+font-size: 32px;
+font-weight: 500;
+margin-bottom: 35px;
+}
+
+.button{
+text-align: center;
+width: 420px;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+
+/* Mobile view */
+@media screen and (max-width: 520px) {
+  .content{
+  margin-left: 20px;
+  margin-right: 80px;
+  margin-top: 250px;
+  }
+.text{
+  font-size: 25px;
+}
+.button{
+  display: none;
+}
+.icon{
+  background-color: var(--color-primary);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+.plus{
+  margin-top: 10px;
+  margin-left: 11px;
+}
+ 
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> No Current Booking</title>
+    <link rel="stylesheet" href="./noCurrentBooking.css" />
+  </head>
+  <body>
+   
+    <!-- nav-bar section -->
+  <header class="header">
+    <!-- mobile nav -->
+    <nav class="nav-small">
+      <a href=""
+        ><img src="./icons/less-than-solid.svg" alt="more options"
+      /></a>
+      <a href=""><img src="./icons/bars-solid.svg" alt="hamburger icon" /></a>
+    </nav>
+    <!-- desktop nav -->
+    <nav class="nav-bar">
+      <a href="#">
+        <h1 class="logo-text">MedBookly</h1>
+      </a>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">Booking</a></li>
+        <li class="nav-item"><a href="#">Settings</a></li>
+      </ul>
+      <div class="profile-end">
+        <span class="search-input">
+          <img class="search-icon" src="./search-icon.svg" alt="search_icon" />
+          <input class="nav-input" type="text" />
+        </span>
+        <span class="profile-avatar"
+          ><img src="./profile-avatar.svg" alt="profile_avatar"/>
+        </span>
+        <span class="profile-name">Adewale</span>
+        <span class="details collapsible collapsible-true">
+          <span class="collapse-arrow arrow-right"
+            ><img class="" src="./more-arrow.svg" alt="search_icon"/>
+          </span>
+        </span>
+        <div class="profile-drop">
+          <a href="#">View Profile</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </nav>
+  </header> 
+
+
+    <!-- main wrapper section -->
+   <main>
+    <div class="container">
+    <div class="tab">
+    <p class="current">Current Bookings </p>
+    <p class="activity">Activity History<p>
+      <br>
+      <div class="content">
+  <p class="text">No History</p>
+  <button class="btn btn-primary button">Create Booking</button>
+    </div>
+    <div class="icon">
+      <img src="./icons/union.svg" alt="plus" class="plus">
+    </div>
+  </div>
+   </main>
+
+    <!-- Link to js country file -->
+  <script src="../app.js">
+  </script>
+  </body>
+</html>
