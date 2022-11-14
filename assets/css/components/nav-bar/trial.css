@@ -1,6 +1,5 @@
 @import url(../../main.css);
 
-
 /* For Mobile Devices <= 520px */
 .nav-bar {
   display: none;
@@ -8,16 +7,19 @@
 
 .nav-small {
   display: flex;
+  width: 100vw;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 25px;
+  position: fixed;
+  z-index: 999;
 }
 
-.nav-small img {
+.na-small a {
   width: 25px;
   height: 25px;
   opacity: 0.8;
 }
-
 
 /* For Tablet (799 - 521) */
 
@@ -52,7 +54,7 @@
 /* For Desktop >= 800px */
 @media screen and (min-width: 800px) {
   .nav-small {
-      display: none;
+    display: none;
   }
 
   .nav-bar {
