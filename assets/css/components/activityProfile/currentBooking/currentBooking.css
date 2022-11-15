@@ -1,16 +1,12 @@
-@import url(../../main.css);
-@import url(../button/button.css);
-@import url(../nav-bar/nav-bar.css);
-@import url(../input/input.css);
-/* @import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic); */
-/* imported the font.... */
+@import url(../../../main.css);
+@import url(../../nav-bar/nav-bar.css);
+
 
 body {
   background-color: var(--color-secondary);
 }
 
-/* Mobile view */
-
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -28,9 +24,10 @@ body {
   background-color: rgb(136, 136, 136);
 }
 
+/* Mobile view */
 .activityOverflow {
   overflow-y: scroll;
-  height: 300px;
+  height: 100vh;
 }
 
 .activityContainer {
@@ -52,7 +49,8 @@ body {
 
 .recordsCard {
   display: flex;
-  background-color: var(--color-secondary);
+  /* background-color: var(--color-secondary); */
+  background-color: #f0f0f0;
   justify-content: space-between;
   align-items: center;
   padding: 24px 20px;
@@ -99,7 +97,7 @@ body {
   .recordsCard {
     display: flex;
     background-color: #f0f0f0;
-    padding: 24px 20px;
+    padding: 29px 26px;
     font-size: 14px;
     font-weight: 400;
   }

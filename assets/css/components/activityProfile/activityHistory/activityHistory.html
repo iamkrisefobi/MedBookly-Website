@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>activityHistory</title>
+    <link rel="stylesheet" href="./activityHistory.css" />
+  </head>
+  <body>
+   
+    <!-- nav-bar section -->
+  <header class="header">
+    <!-- mobile nav -->
+    <nav class="nav-small">
+      <a href=""
+        ><img src="../icons/less-than-solid.svg" alt="more options"
+      /></a>
+      <a href=""><img src="../icons/bars-solid.svg" alt="hamburger icon" /></a>
+    </nav>
+    <!-- desktop nav -->
+    <nav class="nav-bar">
+      <a href="#">
+        <h1 class="logo-text">MedBookly</h1>
+      </a>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">Booking</a></li>
+        <li class="nav-item"><a href="#">Settings</a></li>
+      </ul>
+      <div class="profile-end">
+        <span class="search-input">
+          <img class="search-icon" src="../icons/search-icon.svg" alt="search_icon" />
+          <input class="nav-input" type="text" />
+        </span>
+        <span class="profile-avatar"
+          ><img src="../icons/profile-avatar.svg" alt="profile_avatar"/>
+        </span>
+        <span class="profile-name">Adewale</span>
+        <span class="details collapsible collapsible-true">
+          <span class="collapse-arrow arrow-right"
+            ><img class="" src="../icons/more-arrow.svg" alt="search_icon"/>
+          </span>
+        </span>
+        <div class="profile-drop">
+          <a href="#">View Profile</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </nav>
+  </header> 
+
+
+    <!-- main wrapper section -->
+   <main>
+    <div class="activityContainer">
+      <div class="currentActivityHeading">
+        <span class="currentBooking">Current Bookings </span>
+        <span class="activityHistory">Activity History</span>
+      </div>
+      <div class="appntType">
+        <ul>
+            <li class="listCancel"><span>Cancelled booking</span></li>
+            <li class="listReschedule"><span>Rescheduled/Updated booking</span></li>
+            <li class="listApprove"><span>Approved booking</span></li>
+        </ul>
+      </div>
+      <div class="activityOverflow">
+        <!-- First Card -->
+        <div class="recordsCard bgCancel">
+          <p class="bookingDetails"><span>Dental Appointment</span> <span>7/7/22</span></p>
+          <div>
+            <span><a href="#" class="viewDetails">View details</a></span>
+            <span><a href="#" class="recordDelete">Delete</a></span>
+          </div>
+        </div>
+        <!-- Second Card -->
+        <div class="recordsCard bgReschedule">
+          <p class="bookingDetails"><span>Optometry Appointment</span> <span>12/8/22</span></p>
+          <div>
+            <span><a href="#" class="viewDetails">View details</a></span>
+            <span><a href="#" class="recordDelete">Delete</a></span>
+          </div>
+        </div>
+        <!-- Third Card -->
+        <div class="recordsCard bgApprove">
+          <p class="bookingDetails"><span>Cosmetics Appointment</span> <span>8/6/22</span></p>
+          <div>
+            <span><a href="#" class="viewDetails">View details</a></span>
+            <span><a href="#" class="recordDelete">Delete</a></span>
+          </div>
+        </div>
+        <!-- Fourth Card -->
+        <div class="recordsCard bgReschedule">
+          <p class="bookingDetails"><span>Psychiatrist Appointment</span> <span>21/8/22</span></p>
+          <div>
+            <span><a href="#" class="viewDetails">View details</a></span>
+            <span><a href="#" class="recordDelete">Delete</a></span>
+          </div>
+        </div>
+        <!-- Fifth Card -->
+        <div class="recordsCard bgCancel">
+          <p class="bookingDetails"><span>Surgery Appointment</span> <span>8/12/22</span></p>
+          <div>
+            <span><a href="#" class="viewDetails">View details</a></span>
+            <span><a href="#" class="recordDelete">Delete</a></span>
+          </div>
+        </div>
+        <!-- Sixth Card -->
+        <div class="recordsCard bgCancel">
+          <p class="bookingDetails"><span>Optometry Appointment</span> <span>9/4/22</span></p>
+          <div>
+            <span><a href="#" class="viewDetails">View details</a></span>
+            <span><a href="#" class="recordDelete">Delete</a></span>
+          </div>
+        </div>
+        <!-- Seventh Card -->
+        <div class="recordsCard bgApprove">
+          <p class="bookingDetails"><span>Physiotheraphy Appointment</span> <span>21/2/22</span></p>
+          <div>
+            <span><a href="#" class="viewDetails">View details</a></span>
+            <span><a href="#" class="recordDelete">Delete</a></span>
+          </div>
+        </div>
+         <!-- Eighth Card -->
+         <div class="recordsCard bgCancel">
+          <p class="bookingDetails"><span>Vetinary Appointment</span> <span>16/1/22</span></p>
+          <div>
+            <span><a href="#" class="viewDetails">View details</a></span>
+            <span><a href="#" class="recordDelete">Delete</a></span>
+          </div>
+        </div>
+        <!-- Ninth Card -->
+        <div class="recordsCard bgCancel">
+          <p class="bookingDetails"><span>Pediatric Appointment</span> <span>25/2/22</span></p>
+          <div>
+            <span><a href="#" class="viewDetails">View details</a></span>
+            <span><a href="#" class="recordDelete">Delete</a></span>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </main>
+
+
+  </body>
+</html>
