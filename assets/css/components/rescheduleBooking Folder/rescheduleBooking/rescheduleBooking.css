@@ -52,6 +52,13 @@
     padding-bottom: 25px;
 }
 
+.arrow-img {
+    position: absolute;
+    bottom: 37%;
+    right: 2.5%;
+    cursor: pointer;
+  }
+
 .btn {
     margin: 28px 0 22px ;
 }
