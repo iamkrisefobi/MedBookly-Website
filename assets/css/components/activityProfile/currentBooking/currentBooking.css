@@ -25,15 +25,12 @@ body {
 }
 
 /* Mobile view */
-.activityOverflow {
+.activity-overflow {
   overflow-y: scroll;
   height: 100vh;
 }
 
-.activityContainer {
-  }
-
-.currentActivityHeading {
+.current-activity-heading {
   display: flex;
   justify-content: space-between;
   padding: 10px 40px 29px;
@@ -42,12 +39,12 @@ body {
   font-weight: 400;
 }
 
-.currentBooking {
+.current-booking {
   border-bottom: 3px solid;
   padding-bottom: 2px;
 }
 
-.recordsCard {
+.records-card {
   display: flex;
   /* background-color: var(--color-secondary); */
   background-color: #f0f0f0;
@@ -59,12 +56,12 @@ body {
   margin-bottom: 5px;
 }
 
-.bookingDetails {
+.booking-details {
   width: 75%;
   min-width: 100px;
 }
 
-.viewDetails {
+.view-details {
   flex-wrap: nowrap;
   height: 32px;
   text-decoration: none;
@@ -73,11 +70,11 @@ body {
 
   /* Desktop view */
 @media screen and (min-width: 767px) {
-  .activityContainer {
+  .activity-container {
     padding: 43px 90px 29px;
   }
   
-  .currentActivityHeading {
+  .current-activity-heading {
     padding-left: 0;
     justify-content: flex-start;
     font-size: 16px;
@@ -85,16 +82,16 @@ body {
     font-weight: 500;
   }
   
-  .currentBooking {
+  .current-booking {
     border-bottom: 3px solid;
     padding-bottom: 2px;
   }
   
-  .activityHistory {
+  .activity-history {
     padding-left: 100px;
   }
 
-  .recordsCard {
+  .records-card {
     display: flex;
     background-color: #f0f0f0;
     padding: 29px 26px;

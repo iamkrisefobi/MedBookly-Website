@@ -25,13 +25,13 @@ body {
 }
 
 /* Mobile view */
-.activityOverflow {
+.activity-overflow {
   overflow-y: scroll;
   height: 100vh;
 }
 
 
-.currentActivityHeading {
+.current-activity-heading {
   display: flex;
   justify-content: space-between;
   padding: 10px 40px 29px;
@@ -40,34 +40,34 @@ body {
   font-weight: 400;
 }
 
-.activityHistory {
+.activity-history {
   border-bottom: 3px solid;
   padding-bottom: 2px;
 }
 
-.appntType {
+.appnt-type {
   /* border: 1px solid red; */
   padding: 2px 0;
   margin-bottom: 12px;
   padding-left: 12px;
 }
 
-.appntType ul {
+.appnt-type ul {
   display: flex;
   justify-content: space-around;
 }
 
-.appntType li {
+.appnt-type li {
   font-size: 18px;
   text-indent: -7px;
 }
 
-.appntType li span {
+.appnt-type li span {
   color: black;
   font-size: 8px;
 }
 
-.recordsCard {
+.records-card {
   display: flex;
   background-color: var(--color-secondary);
   justify-content: space-between;
@@ -78,42 +78,42 @@ body {
   margin-bottom: 5px;
 }
 
-.listCancel {
+.list-cancel {
   color: #F8CDCD;
 }
 
-.bgCancel {
+.bg-cancel {
   background: #F8CDCD;
 }
 
-.listReschedule {
+.list-reschedule {
   color: #F5F5F5;
 }
 
-.bgReschedule {
+.bg-reschedule {
   background: #F5F5F5;
 }
 
-.listApprove {
+.list-approve {
   color: #D9F7D6;
 }
 
-.bgApprove {
+.bg-approve {
   background: #D9F7D6;
 }
 
-.bookingDetails {
+.booking-details {
   width: 40%;
   min-width: 50px;
 }
 
-.viewDetails {
+.view-details {
   flex-wrap: nowrap;
   text-decoration: none;
   color: var(--color-primary);
 }
 
-.recordDelete {
+.record-delete {
   flex-wrap: nowrap;
   text-decoration: none;
   color: var(--color-danger);
@@ -123,53 +123,42 @@ body {
 
   /* Desktop view */
 @media screen and (min-width: 767px) {
-  .activityContainer {
+  .activity-container {
     padding: 43px 90px 29px;
   }
   
-  .currentActivityHeading {
+  .current-activity-heading {
     padding-left: 0;
     justify-content: flex-start;
     font-size: 16px;
     line-height: 19px;
     font-weight: 500;
   }
-  
-  /* .activityHistory {
-    border-bottom: 3px solid;
-    padding-bottom: 2px;
-  } */
-  
-  .currentBooking {
+
+  .current-booking {
     padding-right: 100px;
   }
 
-.appntType ul {
+.appnt-type ul {
   justify-content: flex-start;
   padding-right: 10px;
 }
 
-.appntType li {
-  /* justify-content: flex-start; */
+.appnt-type li {
   padding-right: 50px;
 }
 
-.appntType li span {
-  /* color: black; */
+.appnt-type li span {
   font-size: 14px;
   font-weight: 400;
 }
 
-.recordDelete {
-  /* flex-wrap: nowrap; */
-  /* text-decoration: none; */
-  /* color: var(--color-danger); */
+.record-delete {
   margin-left: 25px;
 }
 
-.recordsCard {
+.records-card {
   display: flex;
-  /* background-color: #f0f0f0; */
   padding: 29px 26px;
   font-size: 14px;
   font-weight: 400;

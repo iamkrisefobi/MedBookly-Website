@@ -8,7 +8,7 @@ body {
 }
 
 /* Mobile view */
-.currentActivityHeading {
+.current-activity-heading {
   display: flex;
   justify-content: space-between;
   padding: 10px 40px 29px;
@@ -17,12 +17,12 @@ body {
   font-weight: 400;
 }
 
-.currentBooking {
+.current-booking {
   border-bottom: 3px solid;
   padding-bottom: 2px;
 }
 
-.bookingContent {
+.booking-content {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -30,7 +30,7 @@ body {
   flex-direction: column;
 }
 
-.noRecords {
+.no-records {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -40,7 +40,7 @@ body {
   display: none;
 }
 
-.plusIcon {
+.plus-icon {
   height: 45px;
   position: fixed;
   margin-top: 10px;
@@ -57,11 +57,11 @@ body {
 
   /* Desktop view */
 @media screen and (min-width: 767px) {
-  .activityContainer {
+  .activity-container {
     padding: 43px 90px 29px;
   }
   
-  .currentActivityHeading {
+  .current-activity-heading {
     padding-left: 0;
     justify-content: flex-start;
     font-size: 16px;
@@ -69,16 +69,16 @@ body {
     font-weight: 500;
   }
   
-  .currentBooking {
+  .current-booking {
     border-bottom: 3px solid;
     padding-bottom: 2px;
   }
   
-  .activityHistory {
+  .activity-history {
     padding-left: 100px;
   }
 
-  .noRecords {
+  .no-records {
     font-weight: 500;
     font-size: 32px;
     line-height: 38px;
@@ -91,12 +91,9 @@ body {
     line-height: 19px;
     margin: 40px;
     width: 40%;
-    /* display: flex; */
-    /* align-items: center; */
-    /* text-align: center; */
   }
   
-  .plusIcon {
+  .plus-icon {
     display: none;
   }
 
